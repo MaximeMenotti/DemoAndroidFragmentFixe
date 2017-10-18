@@ -1,6 +1,5 @@
 package com.example.eservice_fa.demofragmentsfixe;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -14,9 +13,10 @@ public class FragmentFixe extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         afficheMessage("Fragment : onCreateView");
-        return inflater.inflate(R.layout.fragment_fragment_fixe, container, false);
+        return inflater.inflate(R.layout.fragment_fixe, container, false);
     }
 
+    /*
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -69,7 +69,7 @@ public class FragmentFixe extends Fragment {
     public void onDetach(){
         super.onDetach();
         afficheMessage("Fragment : onDetach");
-    }
+    }*/
 
     public void afficheMessage(String message) {
         Toast.makeText(this.getContext(), message, Toast.LENGTH_SHORT).show();
