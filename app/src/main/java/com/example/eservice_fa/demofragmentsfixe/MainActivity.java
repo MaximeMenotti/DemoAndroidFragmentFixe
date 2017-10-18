@@ -12,7 +12,7 @@ public class MainActivity extends FragmentActivity {
         afficheMessage("Activity : onCreate");
     }
 
-
+    /*
     @Override
     protected void onStart() {
         // TODO Auto-generated method stub
@@ -54,6 +54,7 @@ public class MainActivity extends FragmentActivity {
         super.onDestroy();
         afficheMessage("Activity : onDestroy");
     }
+    */
 
     public void afficheMessage(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
